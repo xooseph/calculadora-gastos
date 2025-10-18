@@ -72,10 +72,10 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SHIELDS AND LINKS -->
-[language-shield]: https://img.shields.io/badge/Language-Version-pink?style=for-the-badge&labelColor=2C363F&color=E75A7C
-[language-url]: https://www.example.com
-[language-top-shield]: https://img.shields.io/github/languages/top/xooseph/the-most-powerful-README-template?style=for-the-badge&labelColor=2C363F&color=E75A7C
-[repo-size-shield]: https://img.shields.io/github/repo-size/xooseph/the-most-powerful-README-template?style=for-the-badge&labelColor=2C363F&color=E75A7C
-[last-commit-shield]: https://img.shields.io/github/last-commit/xooseph/the-most-powerful-README-template?style=for-the-badge&labelColor=2C363F&color=E75A7C
-[license-shield]: https://img.shields.io/github/license/xooseph/the-most-powerful-README-template?style=for-the-badge&labelColor=2C363F&color=E75A7C
-[license-url]: https://www.example.com
+[language-shield]: https://img.shields.io/badge/Java-21-pink?style=for-the-badge&labelColor=2C363F&color=E75A7C
+[language-url]: https://www.oracle.com/java/
+[language-top-shield]: https://img.shields.io/github/languages/top/xooseph/calculadora-gastos?style=for-the-badge&labelColor=2C363F&color=E75A7C
+[repo-size-shield]: https://img.shields.io/github/repo-size/xooseph/calculadora-gastos?style=for-the-badge&labelColor=2C363F&color=E75A7C
+[last-commit-shield]: https://img.shields.io/github/last-commit/xooseph/calculadora-gastos?style=for-the-badge&labelColor=2C363F&color=E75A7C
+[license-shield]: https://img.shields.io/github/license/xooseph/calculadora-gastos?style=for-the-badge&labelColor=2C363F&color=E75A7C
+[license-url]: https://github.com/xooseph/calculadora-gastos?tab=Unlicense-1-ov-file#readme
