@@ -29,35 +29,40 @@ public class CalculadoraGastos {
             mostrarMenu();
             opcion = leerOpcion(scanner);
 
-            switch (opcion) {
-                case 1:
-                    agregarGasto();
-                    break;
-                case 2:
-                    registrarIngreso();
-                    break;
-                case 3:
-                    verTodo();
-                    break;
-                case 4:
-                    verSoloGastos();
-                    break;
-                case 5:
-                    verPorCategoria();
-                    break;
-                case 6:
-                    buscarPorGasto();
-                    break;
-                case 7:
-                    verResumen();
-                    break;
-                case 8:
-                    System.out.println("\n¡Gracias por usar la calculadora!");
-                    break;
-                default:
-                    System.out.println("Opción no válida.");
+            // try-catch para manejar errores
+            try {
+                switch (opcion) {
+                    case 1:
+                        agregarGasto();
+                        break;
+                    case 2:
+                        registrarIngreso();
+                        break;
+                    case 3:
+                        verTodo();
+                        break;
+                    case 4:
+                        verSoloGastos();
+                        break;
+                    case 5:
+                        verPorCategoria();
+                        break;
+                    case 6:
+                        buscarPorGasto();
+                        break;
+                    case 7:
+                        verResumen();
+                        break;
+                    case 8:
+                        System.out.println("\n¡Gracias por usar la calculadora!");
+                        break;
+                    default:
+                        System.out.println("Opción no válida.");
+                }
+            } catch (PresupuestoInsuficienteException e) {
+                // Manejo de la excepción
+                System.out.println("ERROR: " + e.getMessage());
             }
-
         } while (opcion != 8);
 
         scanner.close();
@@ -102,7 +107,8 @@ public class CalculadoraGastos {
         return opcion;
     }
 
-    private void agregarGasto() {
+    // Lanza excepción si no hay presupuesto
+    private void agregarGasto() throws PresupuestoInsuficienteException {
         scanner.nextLine(); // Limpiar
 
         System.out.println("--- AGREGAR GASTO ---");
@@ -118,6 +124,11 @@ public class CalculadoraGastos {
         // Leer cuánto gastó
         System.out.print("¿Cuánto gastaste? $");
         double monto = leerMonto();
+
+        // Valida presupuesto antes de agregar el gasto
+        if (monto > presupuesto) {
+            throw new PresupuestoInsuficienteException(monto - presupuesto);
+        }
 
         // Elegir categoría
         System.out.println("Categorías:");

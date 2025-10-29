@@ -9,7 +9,7 @@ public class Gasto extends Movimiento {
     @Override
     public void mostrar() {
         System.out.println("  - " + descripcion + ": $" + monto
-                + " (" + categoria + ")");
+                + " (" + categoria + ") [" + getFechaFormateada() + "]");
     }
 
     public String getCategoria() {
