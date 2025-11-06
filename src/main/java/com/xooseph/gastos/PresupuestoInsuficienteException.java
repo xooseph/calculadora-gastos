@@ -1,3 +1,5 @@
+package com.xooseph.gastos;
+
 public class PresupuestoInsuficienteException extends Exception  {
     private double faltante;
 

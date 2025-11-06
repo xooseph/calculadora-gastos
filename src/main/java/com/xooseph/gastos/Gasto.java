@@ -1,3 +1,5 @@
+package com.xooseph.gastos;
+
 public class Gasto extends Movimiento {
     private String categoria;
 

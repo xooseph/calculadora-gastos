@@ -1,3 +1,5 @@
+package com.xooseph.gastos;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -154,7 +156,7 @@ public class CalculadoraGastos {
             categoria = "Otros";
         }
 
-        // Creo el objeto Gasto
+        // Creo el objeto src.main.java.com.xooseph.gastos.Gasto
         Gasto nuevoGasto = new Gasto(descripcion, monto, categoria);
 
         // Lo agrego al ArrayList
@@ -165,7 +167,7 @@ public class CalculadoraGastos {
 
         presupuesto = presupuesto - monto;
 
-        System.out.println("¡Listo! Gasto registrado.");
+        System.out.println("¡Listo! src.main.java.com.xooseph.gastos.Gasto registrado.");
         System.out.println("Gastaste $" + monto);
         System.out.println("Te quedan $" + presupuesto);
 
@@ -189,13 +191,13 @@ public class CalculadoraGastos {
         System.out.print("¿Cuánto ingresaste? $");
         double monto = leerMonto();
 
-        // Creo el objeto Ingreso
+        // Creo el objeto src.main.java.com.xooseph.gastos.Ingreso
         Ingreso nuevoIngreso = new Ingreso(descripcion, monto);
         todosLosMovimientos.add(nuevoIngreso);
 
         presupuesto = presupuesto + monto;
 
-        System.out.println("¡Listo! Ingreso registrado.");
+        System.out.println("¡Listo! src.main.java.com.xooseph.gastos.Ingreso registrado.");
         System.out.println("Ingresaste: $" + monto);
         System.out.println("Ahora tienes: $" + presupuesto);
     }
